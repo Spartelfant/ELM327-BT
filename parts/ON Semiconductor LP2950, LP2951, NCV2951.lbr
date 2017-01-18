@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="TO-92">
+<wire x1="-1.715" y1="-1.8425" x2="1.715" y2="-1.8425" width="0.25" layer="21"/>
+<wire x1="-1.715" y1="-1.8425" x2="1.715" y2="-1.8425" width="0.25" layer="21" curve="-260"/>
+<pad name="1" x="-1.905" y="-1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="2" x="0" y="1.27" drill="1" diameter="1.5" rot="R90"/>
+<pad name="3" x="1.905" y="-1.27" drill="1" diameter="1.5"/>
+<text x="0" y="3.175" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+</package>
+<package name="DPAK">
+<text x="0" y="7.62" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<smd name="3" x="2.285" y="-4.39" dx="1.6" dy="3" layer="1"/>
+<smd name="1" x="-2.285" y="-4.39" dx="1.6" dy="3" layer="1"/>
+<smd name="2" x="0" y="2.79" dx="5.8" dy="6.2" layer="1"/>
+<wire x1="-3.27" y1="3.0475" x2="-3.27" y2="-3.0475" width="0.25" layer="21"/>
+<wire x1="-3.27" y1="-3.0475" x2="3.27" y2="-3.0475" width="0.25" layer="21"/>
+<wire x1="3.27" y1="-3.0475" x2="3.27" y2="3.0475" width="0.25" layer="21"/>
+<wire x1="3.27" y1="3.0475" x2="2.5075" y2="3.0475" width="0.25" layer="21"/>
+<wire x1="2.5075" y1="3.0475" x2="-2.5075" y2="3.0475" width="0.25" layer="21"/>
+<wire x1="-2.5075" y1="3.0475" x2="-3.27" y2="3.0475" width="0.25" layer="21"/>
+<wire x1="-2.5075" y1="4.1275" x2="2.5075" y2="4.1275" width="0.25" layer="21"/>
+<wire x1="-2.5075" y1="4.1275" x2="-2.5075" y2="3.0475" width="0.25" layer="21"/>
+<wire x1="2.5075" y1="4.1275" x2="2.5075" y2="3.0475" width="0.25" layer="21"/>
+</package>
+<package name="SOIC-8">
+<text x="0" y="3.81" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<smd name="1" x="-2.75" y="1.905" dx="1.5" dy="0.6" layer="1"/>
+<smd name="2" x="-2.75" y="0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="3" x="-2.75" y="-0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="4" x="-2.75" y="-1.905" dx="1.5" dy="0.6" layer="1"/>
+<smd name="5" x="2.75" y="-1.905" dx="1.5" dy="0.6" layer="1"/>
+<smd name="6" x="2.75" y="-0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="7" x="2.75" y="0.635" dx="1.5" dy="0.6" layer="1"/>
+<smd name="8" x="2.75" y="1.905" dx="1.5" dy="0.6" layer="1"/>
+<wire x1="-1.95" y1="2.45" x2="-1.95" y2="-2.45" width="0.25" layer="21"/>
+<wire x1="-1.95" y1="-2.45" x2="1.95" y2="-2.45" width="0.25" layer="21"/>
+<wire x1="1.95" y1="-2.45" x2="1.95" y2="2.45" width="0.25" layer="21"/>
+<wire x1="-0.635" y1="2.45" x2="-1.95" y2="2.45" width="0.25" layer="21"/>
+<wire x1="0.635" y1="2.45" x2="-0.635" y2="2.45" width="0.25" layer="21" curve="-180"/>
+<wire x1="1.95" y1="2.45" x2="0.635" y2="2.45" width="0.25" layer="21"/>
+</package>
+<package name="MICRO8">
+<text x="0" y="2.54" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<smd name="1" x="-2.225" y="0.975" dx="0.8" dy="0.48" layer="1"/>
+<smd name="2" x="-2.225" y="0.325" dx="0.8" dy="0.48" layer="1"/>
+<smd name="3" x="-2.225" y="-0.325" dx="0.8" dy="0.48" layer="1"/>
+<smd name="4" x="-2.225" y="-0.975" dx="0.8" dy="0.48" layer="1"/>
+<smd name="5" x="2.225" y="-0.975" dx="0.8" dy="0.48" layer="1"/>
+<smd name="6" x="2.225" y="-0.325" dx="0.8" dy="0.48" layer="1"/>
+<smd name="7" x="2.225" y="0.325" dx="0.8" dy="0.48" layer="1"/>
+<smd name="8" x="2.225" y="0.975" dx="0.8" dy="0.48" layer="1"/>
+<wire x1="-1.475" y1="1.475" x2="-1.475" y2="-1.475" width="0.25" layer="21"/>
+<wire x1="-1.475" y1="-1.475" x2="1.475" y2="-1.475" width="0.25" layer="21"/>
+<wire x1="1.475" y1="-1.475" x2="1.475" y2="1.475" width="0.25" layer="21"/>
+<wire x1="-0.635" y1="1.475" x2="-1.475" y2="1.475" width="0.25" layer="21"/>
+<wire x1="0.635" y1="1.475" x2="-0.635" y2="1.475" width="0.25" layer="21" curve="-180"/>
+<wire x1="1.475" y1="1.475" x2="0.635" y2="1.475" width="0.25" layer="21"/>
+</package>
+<package name="PDIP-8">
+<text x="0" y="6.35" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.3025" y1="4.795" x2="-3.3025" y2="-4.795" width="0.25" layer="21"/>
+<wire x1="-3.3025" y1="-4.795" x2="3.3025" y2="-4.795" width="0.25" layer="21"/>
+<wire x1="3.3025" y1="-4.795" x2="3.3025" y2="4.795" width="0.25" layer="21"/>
+<pad name="1" x="-3.81" y="3.81" drill="1" diameter="1.5" rot="R180"/>
+<pad name="2" x="-3.81" y="1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="3" x="-3.81" y="-1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="4" x="-3.81" y="-3.81" drill="1" diameter="1.5" rot="R180"/>
+<pad name="5" x="3.81" y="-3.81" drill="1" diameter="1.5"/>
+<pad name="6" x="3.81" y="-1.27" drill="1" diameter="1.5"/>
+<pad name="7" x="3.81" y="1.27" drill="1" diameter="1.5"/>
+<pad name="8" x="3.81" y="3.81" drill="1" diameter="1.5"/>
+<wire x1="-1.27" y1="4.795" x2="-3.3025" y2="4.795" width="0.25" layer="21"/>
+<wire x1="1.27" y1="4.795" x2="-1.27" y2="4.795" width="0.25" layer="21" curve="-180"/>
+<wire x1="3.3025" y1="4.795" x2="1.27" y2="4.795" width="0.25" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LP2950">
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="-10.16" y2="2.54" width="0.4064" layer="94"/>
+<pin name="GND" x="0" y="-5.08" visible="pad" length="short" rot="R90"/>
+<pin name="INPUT" x="-12.7" y="0" visible="pad" length="short"/>
+<pin name="OUTPUT" x="12.7" y="0" visible="pad" length="short" rot="R180"/>
+<text x="0" y="6.35" size="1.27" layer="95" font="vector" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="3.81" size="1.27" layer="96" font="vector" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
+<text x="8.89" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Output</text>
+<text x="-8.89" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Input</text>
+<text x="0" y="-1.27" size="1.27" layer="95" font="vector" ratio="10" rot="R90" align="center-left">GND</text>
+</symbol>
+<symbol name="LP2951">
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.4064" layer="94"/>
+<pin name="OUTPUT" x="-12.7" y="7.62" visible="pad" length="short"/>
+<text x="0" y="13.97" size="1.27" layer="95" font="vector" ratio="10" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="11.43" size="1.27" layer="96" font="vector" ratio="10" rot="SR0" align="center">&gt;VALUE</text>
+<pin name="INPUT" x="12.7" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-7.62" visible="pad" length="short"/>
+<pin name="SHUTDOWN" x="-12.7" y="-2.54" visible="pad" length="short"/>
+<pin name="SENSE" x="-12.7" y="2.54" visible="pad" length="short"/>
+<pin name="FEEDBACK" x="12.7" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="VOTAP" x="12.7" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ERROROUTPUT" x="12.7" y="-7.62" visible="pad" length="short" rot="R180"/>
+<text x="-8.89" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Output</text>
+<text x="-8.89" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Sense</text>
+<text x="-8.89" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Shutdown</text>
+<text x="-8.89" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">GND</text>
+<text x="8.89" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Input</text>
+<text x="8.89" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Feedback</text>
+<text x="8.89" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">VTap</text>
+<text x="8.89" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!Error</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LP2950*?" prefix="U">
+<gates>
+<gate name="G$1" symbol="LP2950" x="0" y="0"/>
+</gates>
+<devices>
+<device name="Z-5.0" package="TO-92">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="Z-3.3" package="TO-92">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="Z-3.0" package="TO-92">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DT-3.0" package="DPAK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DT-3.3" package="DPAK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DT-5.0" package="DPAK">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT" pad="1"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCV2951*?" prefix="U">
+<gates>
+<gate name="G$1" symbol="LP2951" x="0" y="0"/>
+</gates>
+<devices>
+<device name="D-3.3R2" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+</technologies>
+</device>
+<device name="DR2" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LP2951*?" prefix="U">
+<gates>
+<gate name="G$1" symbol="LP2951" x="0" y="0"/>
+</gates>
+<devices>
+<device name="D-3.0" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="D-3.3" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="SOIC-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DM-3.0" package="MICRO8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DM-3.3" package="MICRO8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="DM" package="MICRO8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="N-3.0" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.0 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="N-3.3" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="3.3 V"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+<device name="N" package="PDIP-8">
+<connects>
+<connect gate="G$1" pin="ERROROUTPUT" pad="5"/>
+<connect gate="G$1" pin="FEEDBACK" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="INPUT" pad="8"/>
+<connect gate="G$1" pin="OUTPUT" pad="1"/>
+<connect gate="G$1" pin="SENSE" pad="2"/>
+<connect gate="G$1" pin="SHUTDOWN" pad="3"/>
+<connect gate="G$1" pin="VOTAP" pad="6"/>
+</connects>
+<technologies>
+<technology name="AC">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="0.5%"/>
+</technology>
+<technology name="C">
+<attribute name="OUTPUT_VOLTAGE" value="5.0 V or Adjustable" constant="no"/>
+<attribute name="OUTPUT_VOLTAGE_PRECISION" value="1%"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

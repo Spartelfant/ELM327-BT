@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;All of Elm Electronics' "OBD Interpreter" ICs.&lt;/b&gt;
+&lt;p&gt;Part numbers in this library match the SKUs used by &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;. In order to distinguish between different versions of the same part, part numbers in this library are suffixed with the version number between brackets.&lt;/p&gt;
+&lt;p&gt;Schematic symbols are labeled with the chip's corresponding pin numbers as well as function descriptions matching the datasheet.&lt;/p&gt;
+&lt;p&gt;Packages are designed using &lt;a href="www.microchip.com"&gt;Microchip Technology Inc.&lt;/a&gt;'s "Packaging Specification" as a reference.&lt;/p&gt;
+&lt;p&gt;This library was created 2016-09-20 by Bart Kuijper and is licensed under a &lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;Creative Commons Attribution-ShareAlike 4.0 International License&lt;/a&gt;.&lt;/p&gt;</description>
+<packages>
+<package name="SPDIP(28)">
+<description>28-Lead Skinny Plastic Dual In-Line (SP) - 300 mil Body [SPDIP]</description>
+<wire x1="-1.27" y1="17.3355" x2="-3.6195" y2="17.3355" width="0.25" layer="21"/>
+<wire x1="1.27" y1="17.3355" x2="-1.27" y2="17.3355" width="0.25" layer="21" curve="-180"/>
+<wire x1="-3.6195" y1="-17.3355" x2="3.6195" y2="-17.3355" width="0.25" layer="21"/>
+<wire x1="3.6195" y1="17.3355" x2="1.27" y2="17.3355" width="0.25" layer="21"/>
+<wire x1="3.6195" y1="17.3355" x2="3.6195" y2="-17.3355" width="0.25" layer="21"/>
+<pad name="1" x="-3.81" y="16.51" drill="1" diameter="1.5" rot="R180" first="yes"/>
+<pad name="2" x="-3.81" y="13.97" drill="1" diameter="1.5" rot="R180"/>
+<pad name="3" x="-3.81" y="11.43" drill="1" diameter="1.5" rot="R180"/>
+<pad name="4" x="-3.81" y="8.89" drill="1" diameter="1.5" rot="R180"/>
+<pad name="5" x="-3.81" y="6.35" drill="1" diameter="1.5" rot="R180"/>
+<pad name="6" x="-3.81" y="3.81" drill="1" diameter="1.5" rot="R180"/>
+<pad name="7" x="-3.81" y="1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="8" x="-3.81" y="-1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="9" x="-3.81" y="-3.81" drill="1" diameter="1.5" rot="R180"/>
+<pad name="10" x="-3.81" y="-6.35" drill="1" diameter="1.5" rot="R180"/>
+<pad name="11" x="-3.81" y="-8.89" drill="1" diameter="1.5" rot="R180"/>
+<pad name="12" x="-3.81" y="-11.43" drill="1" diameter="1.5" rot="R180"/>
+<pad name="13" x="-3.81" y="-13.97" drill="1" diameter="1.5" rot="R180"/>
+<pad name="14" x="-3.81" y="-16.51" drill="1" diameter="1.5" rot="R180"/>
+<pad name="15" x="3.81" y="-16.51" drill="1" diameter="1.5"/>
+<pad name="16" x="3.81" y="-13.97" drill="1" diameter="1.5"/>
+<pad name="17" x="3.81" y="-11.43" drill="1" diameter="1.5"/>
+<pad name="18" x="3.81" y="-8.89" drill="1" diameter="1.5"/>
+<pad name="19" x="3.81" y="-6.35" drill="1" diameter="1.5"/>
+<pad name="20" x="3.81" y="-3.81" drill="1" diameter="1.5"/>
+<pad name="21" x="3.81" y="-1.27" drill="1" diameter="1.5"/>
+<pad name="22" x="3.81" y="1.27" drill="1" diameter="1.5"/>
+<pad name="23" x="3.81" y="3.81" drill="1" diameter="1.5"/>
+<pad name="24" x="3.81" y="6.35" drill="1" diameter="1.5"/>
+<pad name="25" x="3.81" y="8.89" drill="1" diameter="1.5"/>
+<pad name="26" x="3.81" y="11.43" drill="1" diameter="1.5"/>
+<pad name="27" x="3.81" y="13.97" drill="1" diameter="1.5"/>
+<pad name="28" x="3.81" y="16.51" drill="1" diameter="1.5"/>
+<text x="0" y="19.05" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-19.05" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.6195" y1="17.3355" x2="-3.6195" y2="-17.3355" width="0.25" layer="21"/>
+</package>
+<package name="SOIC(28)">
+<description>28-Lead Plastic Small Outline (SO) - Wide, 7.50 mm Body [SOIC]</description>
+<wire x1="-3.75" y1="8.95" x2="-3.75" y2="-8.95" width="0.25" layer="21"/>
+<wire x1="-3.75" y1="-8.95" x2="3.75" y2="-8.95" width="0.25" layer="21"/>
+<wire x1="3.75" y1="-8.95" x2="3.75" y2="8.95" width="0.25" layer="21"/>
+<smd name="1" x="-4.7" y="8.255" dx="2" dy="0.6" layer="1"/>
+<smd name="2" x="-4.7" y="6.985" dx="2" dy="0.6" layer="1"/>
+<smd name="3" x="-4.7" y="5.715" dx="2" dy="0.6" layer="1"/>
+<smd name="4" x="-4.7" y="4.445" dx="2" dy="0.6" layer="1"/>
+<smd name="5" x="-4.7" y="3.175" dx="2" dy="0.6" layer="1"/>
+<smd name="6" x="-4.7" y="1.905" dx="2" dy="0.6" layer="1"/>
+<smd name="7" x="-4.7" y="0.635" dx="2" dy="0.6" layer="1"/>
+<smd name="8" x="-4.7" y="-0.635" dx="2" dy="0.6" layer="1"/>
+<smd name="9" x="-4.7" y="-1.905" dx="2" dy="0.6" layer="1"/>
+<smd name="10" x="-4.7" y="-3.175" dx="2" dy="0.6" layer="1"/>
+<smd name="11" x="-4.7" y="-4.445" dx="2" dy="0.6" layer="1"/>
+<smd name="12" x="-4.7" y="-5.715" dx="2" dy="0.6" layer="1"/>
+<smd name="13" x="-4.7" y="-6.985" dx="2" dy="0.6" layer="1"/>
+<smd name="14" x="-4.7" y="-8.255" dx="2" dy="0.6" layer="1"/>
+<smd name="15" x="4.7" y="-8.255" dx="2" dy="0.6" layer="1"/>
+<smd name="16" x="4.7" y="-6.985" dx="2" dy="0.6" layer="1"/>
+<smd name="17" x="4.7" y="-5.715" dx="2" dy="0.6" layer="1"/>
+<smd name="18" x="4.7" y="-4.445" dx="2" dy="0.6" layer="1"/>
+<smd name="19" x="4.7" y="-3.175" dx="2" dy="0.6" layer="1"/>
+<smd name="20" x="4.7" y="-1.905" dx="2" dy="0.6" layer="1"/>
+<smd name="21" x="4.7" y="-0.635" dx="2" dy="0.6" layer="1"/>
+<smd name="22" x="4.7" y="0.635" dx="2" dy="0.6" layer="1"/>
+<smd name="23" x="4.7" y="1.905" dx="2" dy="0.6" layer="1"/>
+<smd name="24" x="4.7" y="3.175" dx="2" dy="0.6" layer="1"/>
+<smd name="25" x="4.7" y="4.445" dx="2" dy="0.6" layer="1"/>
+<smd name="26" x="4.7" y="5.715" dx="2" dy="0.6" layer="1"/>
+<smd name="27" x="4.7" y="6.985" dx="2" dy="0.6" layer="1"/>
+<smd name="28" x="4.7" y="8.255" dx="2" dy="0.6" layer="1"/>
+<text x="0" y="10.16" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="8.95" x2="-3.75" y2="8.95" width="0.25" layer="21"/>
+<wire x1="1.27" y1="8.95" x2="-1.27" y2="8.95" width="0.25" layer="21" curve="-180"/>
+<wire x1="3.75" y1="8.95" x2="1.27" y2="8.95" width="0.25" layer="21"/>
+</package>
+<package name="SSOP(28)">
+<description>28-Lead Plastic Shrink Small Outline (SS) - 5.30 mm Body [SSOP]</description>
+<wire x1="-2.65" y1="5.1" x2="-2.65" y2="-5.1" width="0.25" layer="21"/>
+<wire x1="-2.65" y1="-5.1" x2="2.65" y2="-5.1" width="0.25" layer="21"/>
+<wire x1="2.65" y1="-5.1" x2="2.65" y2="5.1" width="0.25" layer="21"/>
+<smd name="1" x="-3.6" y="4.225" dx="1.75" dy="0.45" layer="1"/>
+<smd name="2" x="-3.6" y="3.575" dx="1.75" dy="0.45" layer="1"/>
+<smd name="3" x="-3.6" y="2.925" dx="1.75" dy="0.45" layer="1"/>
+<smd name="4" x="-3.6" y="2.275" dx="1.75" dy="0.45" layer="1"/>
+<smd name="5" x="-3.6" y="1.625" dx="1.75" dy="0.45" layer="1"/>
+<smd name="6" x="-3.6" y="0.975" dx="1.75" dy="0.45" layer="1"/>
+<smd name="7" x="-3.6" y="0.325" dx="1.75" dy="0.45" layer="1"/>
+<smd name="8" x="-3.6" y="-0.325" dx="1.75" dy="0.45" layer="1"/>
+<smd name="9" x="-3.6" y="-0.975" dx="1.75" dy="0.45" layer="1"/>
+<smd name="10" x="-3.6" y="-1.625" dx="1.75" dy="0.45" layer="1"/>
+<smd name="11" x="-3.6" y="-2.275" dx="1.75" dy="0.45" layer="1"/>
+<smd name="12" x="-3.6" y="-2.925" dx="1.75" dy="0.45" layer="1"/>
+<smd name="13" x="-3.6" y="-3.575" dx="1.75" dy="0.45" layer="1"/>
+<smd name="14" x="-3.6" y="-4.225" dx="1.75" dy="0.45" layer="1"/>
+<smd name="15" x="3.6" y="-4.225" dx="1.75" dy="0.45" layer="1"/>
+<smd name="16" x="3.6" y="-3.575" dx="1.75" dy="0.45" layer="1"/>
+<smd name="17" x="3.6" y="-2.925" dx="1.75" dy="0.45" layer="1"/>
+<smd name="18" x="3.6" y="-2.275" dx="1.75" dy="0.45" layer="1"/>
+<smd name="19" x="3.6" y="-1.625" dx="1.75" dy="0.45" layer="1"/>
+<smd name="20" x="3.6" y="-0.975" dx="1.75" dy="0.45" layer="1"/>
+<smd name="21" x="3.6" y="-0.325" dx="1.75" dy="0.45" layer="1"/>
+<smd name="22" x="3.6" y="0.325" dx="1.75" dy="0.45" layer="1"/>
+<smd name="23" x="3.6" y="0.975" dx="1.75" dy="0.45" layer="1"/>
+<smd name="24" x="3.6" y="1.625" dx="1.75" dy="0.45" layer="1"/>
+<smd name="25" x="3.6" y="2.275" dx="1.75" dy="0.45" layer="1"/>
+<smd name="26" x="3.6" y="2.925" dx="1.75" dy="0.45" layer="1"/>
+<smd name="27" x="3.6" y="3.575" dx="1.75" dy="0.45" layer="1"/>
+<smd name="28" x="3.6" y="4.225" dx="1.75" dy="0.45" layer="1"/>
+<text x="0" y="6.35" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="5.1" x2="-2.65" y2="5.1" width="0.25" layer="21"/>
+<wire x1="1.27" y1="5.1" x2="-1.27" y2="5.1" width="0.25" layer="21" curve="-180"/>
+<wire x1="2.65" y1="5.1" x2="1.27" y2="5.1" width="0.25" layer="21"/>
+</package>
+<package name="PDIP(8)">
+<description>8-Lead Plastic Dual In-Line (P) - 300 mil Body [PDIP]</description>
+<wire x1="-1.27" y1="4.6355" x2="-3.175" y2="4.6355" width="0.25" layer="21"/>
+<wire x1="1.27" y1="4.6355" x2="-1.27" y2="4.6355" width="0.25" layer="21" curve="-180"/>
+<wire x1="-3.175" y1="-4.6355" x2="3.175" y2="-4.6355" width="0.25" layer="21"/>
+<wire x1="3.175" y1="4.6355" x2="1.27" y2="4.6355" width="0.25" layer="21"/>
+<wire x1="3.175" y1="4.6355" x2="3.175" y2="-4.6355" width="0.25" layer="21"/>
+<pad name="1" x="-3.81" y="3.81" drill="1" diameter="1.5" rot="R180" first="yes"/>
+<pad name="2" x="-3.81" y="1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="3" x="-3.81" y="-1.27" drill="1" diameter="1.5" rot="R180"/>
+<pad name="4" x="-3.81" y="-3.81" drill="1" diameter="1.5" rot="R180"/>
+<pad name="5" x="3.81" y="-3.81" drill="1" diameter="1.5"/>
+<pad name="6" x="3.81" y="-1.27" drill="1" diameter="1.5"/>
+<pad name="7" x="3.81" y="1.27" drill="1" diameter="1.5"/>
+<pad name="8" x="3.81" y="3.81" drill="1" diameter="1.5"/>
+<text x="0" y="6.35" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.175" y1="4.6355" x2="-3.175" y2="-4.6355" width="0.25" layer="21"/>
+</package>
+<package name="SOIJ(8)">
+<description>8-Lead Plastic Small Outline (SM) - Medium, 5.28 mm Body [SOIJ]</description>
+<wire x1="-2.625" y1="2.63" x2="-2.625" y2="-2.63" width="0.25" layer="21"/>
+<wire x1="-2.625" y1="-2.63" x2="2.625" y2="-2.63" width="0.25" layer="21"/>
+<wire x1="2.625" y1="-2.63" x2="2.625" y2="2.63" width="0.25" layer="21"/>
+<smd name="1" x="-3.65" y="1.905" dx="1.7" dy="0.65" layer="1"/>
+<smd name="2" x="-3.65" y="0.635" dx="1.7" dy="0.65" layer="1"/>
+<smd name="3" x="-3.65" y="-0.635" dx="1.7" dy="0.65" layer="1"/>
+<smd name="4" x="-3.65" y="-1.905" dx="1.7" dy="0.65" layer="1"/>
+<smd name="5" x="3.65" y="-1.905" dx="1.7" dy="0.65" layer="1"/>
+<smd name="6" x="3.65" y="-0.635" dx="1.7" dy="0.65" layer="1"/>
+<smd name="7" x="3.65" y="0.635" dx="1.7" dy="0.65" layer="1"/>
+<smd name="8" x="3.65" y="1.905" dx="1.7" dy="0.65" layer="1"/>
+<text x="0" y="3.81" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-3.81" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="2.63" x2="-2.625" y2="2.63" width="0.25" layer="21"/>
+<wire x1="1.27" y1="2.63" x2="-1.27" y2="2.63" width="0.25" layer="21" curve="-180"/>
+<wire x1="2.625" y1="2.63" x2="1.27" y2="2.63" width="0.25" layer="21"/>
+</package>
+<package name="PDIP(14)">
+<description>14-Lead Plastic Dual In-Line (P) - 300 mil Body [PDIP]</description>
+<wire x1="-1.27" y1="9.525" x2="-3.175" y2="9.525" width="0.25" layer="21"/>
+<wire x1="1.27" y1="9.525" x2="-1.27" y2="9.525" width="0.25" layer="21" curve="-180"/>
+<wire x1="-3.175" y1="-9.525" x2="3.175" y2="-9.525" width="0.25" layer="21"/>
+<wire x1="3.175" y1="9.525" x2="1.27" y2="9.525" width="0.25" layer="21"/>
+<wire x1="3.175" y1="9.525" x2="3.175" y2="-9.525" width="0.25" layer="21"/>
+<pad name="1" x="-3.81" y="7.62" drill="1" diameter="1.5" rot="R180" first="yes"/>
+<pad name="2" x="-3.81" y="5.08" drill="1" diameter="1.5" rot="R180"/>
+<pad name="3" x="-3.81" y="2.54" drill="1" diameter="1.5" rot="R180"/>
+<pad name="4" x="-3.81" y="0" drill="1" diameter="1.5" rot="R180"/>
+<pad name="5" x="-3.81" y="-2.54" drill="1" diameter="1.5" rot="R180"/>
+<pad name="6" x="-3.81" y="-5.08" drill="1" diameter="1.5" rot="R180"/>
+<pad name="7" x="-3.81" y="-7.62" drill="1" diameter="1.5" rot="R180"/>
+<pad name="8" x="3.81" y="-7.62" drill="1" diameter="1.5"/>
+<pad name="9" x="3.81" y="-5.08" drill="1" diameter="1.5"/>
+<pad name="10" x="3.81" y="-2.54" drill="1" diameter="1.5"/>
+<pad name="11" x="3.81" y="0" drill="1" diameter="1.5"/>
+<pad name="12" x="3.81" y="2.54" drill="1" diameter="1.5"/>
+<pad name="13" x="3.81" y="5.08" drill="1" diameter="1.5"/>
+<pad name="14" x="3.81" y="7.62" drill="1" diameter="1.5"/>
+<text x="0" y="11.43" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.175" y1="9.525" x2="-3.175" y2="-9.525" width="0.25" layer="21"/>
+</package>
+<package name="SOIC(14)">
+<description>14-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC]</description>
+<wire x1="-1.95" y1="4.325" x2="-1.95" y2="-4.325" width="0.25" layer="21"/>
+<wire x1="-1.95" y1="-4.325" x2="1.95" y2="-4.325" width="0.25" layer="21"/>
+<wire x1="1.95" y1="-4.325" x2="1.95" y2="4.325" width="0.25" layer="21"/>
+<smd name="1" x="-2.7" y="3.81" dx="1.5" dy="0.6" layer="1"/>
+<smd name="2" x="-2.7" y="2.54" dx="1.5" dy="0.6" layer="1"/>
+<smd name="3" x="-2.7" y="1.27" dx="1.5" dy="0.6" layer="1"/>
+<smd name="4" x="-2.7" y="0" dx="1.5" dy="0.6" layer="1"/>
+<smd name="5" x="-2.7" y="-1.27" dx="1.5" dy="0.6" layer="1"/>
+<smd name="6" x="-2.7" y="-2.54" dx="1.5" dy="0.6" layer="1"/>
+<smd name="7" x="-2.7" y="-3.81" dx="1.5" dy="0.6" layer="1"/>
+<smd name="8" x="2.7" y="-3.81" dx="1.5" dy="0.6" layer="1"/>
+<smd name="9" x="2.7" y="-2.54" dx="1.5" dy="0.6" layer="1"/>
+<smd name="10" x="2.7" y="-1.27" dx="1.5" dy="0.6" layer="1"/>
+<smd name="11" x="2.7" y="0" dx="1.5" dy="0.6" layer="1"/>
+<smd name="12" x="2.7" y="1.27" dx="1.5" dy="0.6" layer="1"/>
+<smd name="13" x="2.7" y="2.54" dx="1.5" dy="0.6" layer="1"/>
+<smd name="14" x="2.7" y="3.81" dx="1.5" dy="0.6" layer="1"/>
+<text x="0" y="6.35" size="1.27" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.27" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-1.27" y1="4.325" x2="-1.95" y2="4.325" width="0.25" layer="21"/>
+<wire x1="1.27" y1="4.325" x2="-1.27" y2="4.325" width="0.25" layer="21" curve="-180"/>
+<wire x1="1.95" y1="4.325" x2="1.27" y2="4.325" width="0.25" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ELM327-V2.1">
+<description>ELM327 v2.1</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_K" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_L" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="J1850_VOLTS" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="J1850_BUS+" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="BAUD_RATE" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="VPW_IN" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="ISO_IN" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="PWM_IN" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="J1850_BUS-" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Volts</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus+</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Baud rate</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">VPW In</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">ISO In</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">PWM In</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus-</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO L</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO K</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+<symbol name="ELM327L-V2.1">
+<description>ELM327L v2.1</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_K" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_L" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="J1850_VOLTS" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="J1850_BUS+" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="FILTER_CAP" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="VPW_IN" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="ISO_IN" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="PWM_IN" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="J1850_BUS-" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Volts</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus+</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Filter Cap</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">VPW In</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">ISO In</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">PWM In</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus-</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO L</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO K</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+<symbol name="ELM327-V1.3A">
+<description>ELM327 v1.3a</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_K" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_L" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="J1850_VOLTS" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="J1850_BUS+" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="BAUD_RATE" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="VPW_IN" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="ISO_IN" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="PWM_IN" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="J1850_BUS-" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Volts</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus+</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Baud rate</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">VPW In</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">ISO In</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">PWM In</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus-</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO L</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO K</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!RTS</text>
+</symbol>
+<symbol name="ELM327-V1.4B">
+<description>ELM327 v1.4b</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_K" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_L" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="J1850_VOLTS" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="J1850_BUS+" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="BAUD_RATE" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="VPW_IN" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="ISO_IN" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="PWM_IN" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="J1850_BUS-" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Volts</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus+</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Baud rate</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">VPW In</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">ISO In</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">PWM In</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus-</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO L</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO K</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+<symbol name="ELM320-V2.0">
+<description>ELM320 v2.0</description>
+<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<pin name="TX" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="!OBDOUT" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="VSS" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VDD" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="OBDIN" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="!RX" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="XT2" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<text x="0" y="13.97" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="11.43" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vdd</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">OBDIn</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!OBDOut</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Tx</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!Rx</text>
+</symbol>
+<symbol name="ELM322-V2.0">
+<description>ELM322 v2.0</description>
+<wire x1="-17.78" y1="10.16" x2="17.78" y2="10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="10.16" x2="17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-10.16" x2="-17.78" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-10.16" x2="-17.78" y2="10.16" width="0.254" layer="94"/>
+<pin name="TX" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="!OBDOUT" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="VSS" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VDD" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="!OBDIN" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="!RX" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="XT2" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<text x="0" y="13.97" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="11.43" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vdd</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!OBDIn</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!OBDOut</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Tx</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!Rx</text>
+</symbol>
+<symbol name="ELM323-V2.0">
+<description>ELM323 v2.0</description>
+<wire x1="-17.78" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<pin name="!OBDTX" x="20.32" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="!RSTX" x="20.32" y="-15.24" visible="pad" length="short" rot="R180"/>
+<pin name="!OBDRX" x="20.32" y="-10.16" visible="pad" length="short" rot="R180"/>
+<pin name="OBDIN" x="20.32" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="OBDL" x="20.32" y="5.08" visible="pad" length="short" rot="R180"/>
+<pin name="OBDK" x="20.32" y="10.16" visible="pad" length="short" rot="R180"/>
+<pin name="VSS" x="20.32" y="15.24" visible="pad" length="short" rot="R180"/>
+<pin name="XT1" x="-20.32" y="10.16" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="5.08" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="0" visible="pad" length="short"/>
+<pin name="!RS232RX" x="-20.32" y="-5.08" visible="pad" length="short"/>
+<pin name="RS232TX" x="-20.32" y="-10.16" visible="pad" length="short"/>
+<pin name="!RSRX" x="-20.32" y="-15.24" visible="pad" length="short"/>
+<pin name="VDD" x="-20.32" y="15.24" visible="pad" length="short"/>
+<text x="0" y="21.59" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="19.05" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vdd</text>
+<text x="-16.51" y="10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!RS232Rx</text>
+<text x="-16.51" y="-10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-left">RS232Tx</text>
+<text x="-16.51" y="-15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!RSRx</text>
+<text x="16.51" y="15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBDK</text>
+<text x="16.51" y="5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBDL</text>
+<text x="16.51" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBDIn</text>
+<text x="16.51" y="-5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!OBDTx</text>
+<text x="16.51" y="-10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!OBDRx</text>
+<text x="16.51" y="-15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!RSTx</text>
+</symbol>
+<symbol name="ELM325-V1.0">
+<description>ELM325 v1.0</description>
+<wire x1="-17.78" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
+<pin name="!JTXLED" x="20.32" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="!RSTXLED" x="20.32" y="-15.24" visible="pad" length="short" rot="R180"/>
+<pin name="!JRXLED" x="20.32" y="-10.16" visible="pad" length="short" rot="R180"/>
+<pin name="DE" x="20.32" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="!RE" x="20.32" y="5.08" visible="pad" length="short" rot="R180"/>
+<pin name="RO" x="20.32" y="10.16" visible="pad" length="short" rot="R180"/>
+<pin name="VSS" x="20.32" y="15.24" visible="pad" length="short" rot="R180"/>
+<pin name="XT1" x="-20.32" y="10.16" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="5.08" visible="pad" length="short"/>
+<pin name="INVDE" x="-20.32" y="0" visible="pad" length="short"/>
+<pin name="RS232RX" x="-20.32" y="-5.08" visible="pad" length="short"/>
+<pin name="RS232TX" x="-20.32" y="-10.16" visible="pad" length="short"/>
+<pin name="!RSRXLED" x="-20.32" y="-15.24" visible="pad" length="short"/>
+<pin name="VDD" x="-20.32" y="15.24" visible="pad" length="short"/>
+<text x="0" y="21.59" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="19.05" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vdd</text>
+<text x="-16.51" y="10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-left">InvDE</text>
+<text x="-16.51" y="-5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-left">RS232Rx</text>
+<text x="-16.51" y="-10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-left">RS232Tx</text>
+<text x="-16.51" y="-15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!RS Rx LED</text>
+<text x="16.51" y="15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RO</text>
+<text x="16.51" y="5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!RE</text>
+<text x="16.51" y="0" size="1.27" layer="95" font="vector" ratio="10" align="center-right">DE</text>
+<text x="16.51" y="-5.08" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!J Tx LED</text>
+<text x="16.51" y="-10.16" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!J Rx LED</text>
+<text x="16.51" y="-15.24" size="1.27" layer="95" font="vector" ratio="10" align="center-right">!RS Tx LED</text>
+</symbol>
+<symbol name="ELM329-V2.1">
+<description>ELM329 v2.1</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="M1" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="M0" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="ACTIVE_LED" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="CONTROL" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="BAUD_RATE" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="CAN_MONITOR" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="IN1" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="IN2" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="!PWRCTRL" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Active LED</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Control</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Baud rate</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">CAN Monitor</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">In1</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">In2</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!PwrCtrl</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">M0</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">M1</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+<symbol name="ELM329L-V2.1">
+<description>ELM329L v2.1</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="M1" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="M0" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="ACTIVE_LED" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="CONTROL" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="FILTER_CAP" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="CAN_MONITOR" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="IN1" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="IN2" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="!PWRCTRL" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Active LED</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Control</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Filter Cap</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">CAN Monitor</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">In1</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">In2</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!PwrCtrl</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">M0</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">M1</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+<symbol name="ELM328-V1.4">
+<description>ELM328 v1.4</description>
+<wire x1="-17.78" y1="35.56" x2="17.78" y2="35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-35.56" x2="-17.78" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-35.56" x2="-17.78" y2="35.56" width="0.254" layer="94"/>
+<pin name="CAN_RX" x="20.32" y="12.7" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_K" x="20.32" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="ISO_L" x="20.32" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="CAN_TX" x="20.32" y="7.62" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX_LED" x="20.32" y="17.78" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX_LED" x="20.32" y="22.86" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_RX_LED" x="20.32" y="27.94" visible="pad" length="short" rot="R180"/>
+<pin name="OBD_TX_LED" x="20.32" y="33.02" visible="pad" length="short" rot="R180"/>
+<pin name="VMEASURE" x="-20.32" y="27.94" visible="pad" length="short"/>
+<pin name="J1850_VOLTS" x="-20.32" y="22.86" visible="pad" length="short"/>
+<pin name="J1850_BUS+" x="-20.32" y="17.78" visible="pad" length="short"/>
+<pin name="MEMORY" x="-20.32" y="12.7" visible="pad" length="short"/>
+<pin name="BAUD_RATE" x="-20.32" y="7.62" visible="pad" length="short"/>
+<pin name="LFMODE" x="-20.32" y="2.54" visible="pad" length="short"/>
+<pin name="XT2" x="-20.32" y="-12.7" visible="pad" length="short"/>
+<pin name="XT1" x="-20.32" y="-7.62" visible="pad" length="short"/>
+<pin name="VPW_IN" x="-20.32" y="-17.78" visible="pad" length="short"/>
+<pin name="ISO_IN" x="-20.32" y="-22.86" visible="pad" length="short"/>
+<pin name="PWM_IN" x="-20.32" y="-27.94" visible="pad" length="short"/>
+<pin name="J1850_BUS-" x="-20.32" y="-33.02" visible="pad" length="short"/>
+<pin name="IGNMON/!RTS" x="20.32" y="-33.02" visible="pad" length="short" rot="R180"/>
+<pin name="PWRCTRL/BUSY" x="20.32" y="-27.94" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_TX" x="20.32" y="-22.86" visible="pad" length="short" rot="R180"/>
+<pin name="RS232_RX" x="20.32" y="-17.78" visible="pad" length="short" rot="R180"/>
+<pin name="!MCLR" x="-20.32" y="33.02" visible="pad" length="short"/>
+<pin name="VDD" x="20.32" y="-7.62" visible="pad" length="short" rot="R180"/>
+<pin name="VSS@1" x="-20.32" y="-2.54" visible="pad" length="short"/>
+<pin name="VSS@2" x="20.32" y="-12.7" visible="pad" length="short" rot="R180"/>
+<text x="0" y="39.37" size="1.27" layer="95" font="vector" ratio="10" align="center">&gt;NAME</text>
+<text x="0" y="36.83" size="1.27" layer="96" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<text x="-16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">!MCLR</text>
+<text x="-16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vmeasure</text>
+<text x="-16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Volts</text>
+<text x="-16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus+</text>
+<text x="-16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Memory</text>
+<text x="-16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Baud rate</text>
+<text x="-16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">LFmode</text>
+<text x="-16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-left">Vss</text>
+<text x="-16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT1</text>
+<text x="-16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-left">XT2</text>
+<text x="-16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-left">VPW In</text>
+<text x="-16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-left">ISO In</text>
+<text x="-16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-left">PWM In</text>
+<text x="-16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-left">J1850 Bus-</text>
+<text x="16.51" y="33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Tx LED</text>
+<text x="16.51" y="27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">OBD Rx LED</text>
+<text x="16.51" y="22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx LED</text>
+<text x="16.51" y="17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx LED</text>
+<text x="16.51" y="12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Rx</text>
+<text x="16.51" y="7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">CAN Tx</text>
+<text x="16.51" y="2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO L</text>
+<text x="16.51" y="-2.54" size="1.27" layer="95" font="vector" ratio="10" align="center-right">ISO K</text>
+<text x="16.51" y="-7.62" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vdd</text>
+<text x="16.51" y="-12.7" size="1.27" layer="95" font="vector" ratio="10" align="center-right">Vss</text>
+<text x="16.51" y="-17.78" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Rx</text>
+<text x="16.51" y="-22.86" size="1.27" layer="95" font="vector" ratio="10" align="center-right">RS232 Tx</text>
+<text x="16.51" y="-27.94" size="1.27" layer="95" font="vector" ratio="10" align="center-right">PwrCtrl / Busy</text>
+<text x="16.51" y="-33.02" size="1.27" layer="95" font="vector" ratio="10" align="center-right">IgnMon / !RTS</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ELM327?(V2.1)" prefix="U">
+<description>&lt;b&gt;ELM327 - OBD to RS232 Interpreter (v2.1)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;All versions of the ELM327 support the standard OBDII protocols. In addition, the IC supports various other protocols to varying degrees.&lt;/p&gt;
+&lt;p&gt;Version 2.1 is the most recent revision.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM327-V2.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM327L?(V2.1)" prefix="U">
+<description>&lt;b&gt;ELM327L - OBD to RS232 Interpreter (v2.1)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;All versions of the ELM327 support the standard OBDII protocols. In addition, the IC supports various other protocols to varying degrees.&lt;/p&gt;
+&lt;p&gt;This integrated circuit supports all of the ELM327 v2.1 functions, but operates over a wider range of supply voltages (from 2.0V to 5.5V).&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM327L-V2.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SM" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="FILTER_CAP" pad="6"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="FILTER_CAP" pad="6"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SS" package="SSOP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="FILTER_CAP" pad="6"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM327?(V1.3A)" prefix="U">
+<description>&lt;b&gt;ELM327 - OBD to RS232 Interpreter (v1.3a)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;All versions of the ELM327 support the standard OBDII protocols. In addition, the IC supports various other protocols to varying degrees.&lt;/p&gt;
+&lt;p&gt;Version 1.3a is a good basic product that continues to sell well.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM327-V1.3A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P_V13" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="!RTS" pad="15"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="BUSY" pad="16"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM_V13" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="!RTS" pad="15"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="BUSY" pad="16"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM327?(V1.4B)" prefix="U">
+<description>&lt;b&gt;ELM327 - OBD to RS232 Interpreter (v1.4b)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;All versions of the ELM327 support the standard OBDII protocols. In addition, the IC supports various other protocols to varying degrees.&lt;/p&gt;
+&lt;p&gt;Version 1.4b is essentially an ELM327 v1.3a with low power functions to allow the circuit to 'sleep'.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM327-V1.4B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P_V14" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM_V14" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM320?(V2.0)" prefix="U">
+<description>&lt;b&gt;ELM320 - OBD (PWM) to RS232 Interpreter (v2.0)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC12C509A (www.microchip.com)
+&lt;p&gt;The ELM320 supports the 41.6KHz SAE J1850 PWM protocol, which was commonly used in many Ford Motor Company vehicles (but has now generally been replaced by CAN).&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM320-V2.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="PDIP(8)">
+<connects>
+<connect gate="G$1" pin="!OBDOUT" pad="7"/>
+<connect gate="G$1" pin="!RX" pad="5"/>
+<connect gate="G$1" pin="OBDIN" pad="4"/>
+<connect gate="G$1" pin="TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIJ(8)">
+<connects>
+<connect gate="G$1" pin="!OBDOUT" pad="7"/>
+<connect gate="G$1" pin="!RX" pad="5"/>
+<connect gate="G$1" pin="OBDIN" pad="4"/>
+<connect gate="G$1" pin="TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM322?(V2.0)" prefix="U">
+<description>&lt;b&gt;ELM322 - OBD (VPW) to RS232 Interpreter (v2.0)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC12C509A (www.microchip.com)
+&lt;p&gt;Similar to the ELM320, the ELM322 is for connecting to an OBDII equipped vehicle which uses the 10.4KHz SAE J1850 VPW format. This standard was typically used in General Motors and some Chrysler vehicles.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM322-V2.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="PDIP(8)">
+<connects>
+<connect gate="G$1" pin="!OBDIN" pad="4"/>
+<connect gate="G$1" pin="!OBDOUT" pad="7"/>
+<connect gate="G$1" pin="!RX" pad="5"/>
+<connect gate="G$1" pin="TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIJ(8)">
+<connects>
+<connect gate="G$1" pin="!OBDIN" pad="4"/>
+<connect gate="G$1" pin="!OBDOUT" pad="7"/>
+<connect gate="G$1" pin="!RX" pad="5"/>
+<connect gate="G$1" pin="TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="8"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM323?(V2.0)" prefix="U">
+<description>&lt;b&gt;ELM323 - OBD (ISO) to RS232 Interpreter (v2.0)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC16C505 (www.microchip.com)
+&lt;p&gt;The ELM323 supports the ISO 9141-2 and ISO 14230-4 standards that are used by many vehicles throughout the world. You may wish to also consider the ELM327, as it offers several options for customizing the timing etc. that is not provided by the ELM323.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM323-V2.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="PDIP(14)">
+<connects>
+<connect gate="G$1" pin="!OBDRX" pad="9"/>
+<connect gate="G$1" pin="!OBDTX" pad="10"/>
+<connect gate="G$1" pin="!RS232RX" pad="5"/>
+<connect gate="G$1" pin="!RSRX" pad="7"/>
+<connect gate="G$1" pin="!RSTX" pad="8"/>
+<connect gate="G$1" pin="LFMODE" pad="4"/>
+<connect gate="G$1" pin="OBDIN" pad="11"/>
+<connect gate="G$1" pin="OBDK" pad="13"/>
+<connect gate="G$1" pin="OBDL" pad="12"/>
+<connect gate="G$1" pin="RS232TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIC(14)">
+<connects>
+<connect gate="G$1" pin="!OBDRX" pad="9"/>
+<connect gate="G$1" pin="!OBDTX" pad="10"/>
+<connect gate="G$1" pin="!RS232RX" pad="5"/>
+<connect gate="G$1" pin="!RSRX" pad="7"/>
+<connect gate="G$1" pin="!RSTX" pad="8"/>
+<connect gate="G$1" pin="LFMODE" pad="4"/>
+<connect gate="G$1" pin="OBDIN" pad="11"/>
+<connect gate="G$1" pin="OBDK" pad="13"/>
+<connect gate="G$1" pin="OBDL" pad="12"/>
+<connect gate="G$1" pin="RS232TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM325?(V1.0)" prefix="U">
+<description>&lt;b&gt;ELM325 - J1708 Interpreter (v1.0)&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC16F1823 (www.microchip.com)
+&lt;p&gt;This protocol converter integrated circuit is for use with heavy duty vehicles that use the SAE J1708 standard with J1587 or J1922. Although these protocols are being phased out (they’re being replaced by SAE J1939), there are still a very large number of vehicles that use them.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM325-V1.0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="PDIP(14)">
+<connects>
+<connect gate="G$1" pin="!JRXLED" pad="9"/>
+<connect gate="G$1" pin="!JTXLED" pad="10"/>
+<connect gate="G$1" pin="!RE" pad="12"/>
+<connect gate="G$1" pin="!RSRXLED" pad="7"/>
+<connect gate="G$1" pin="!RSTXLED" pad="8"/>
+<connect gate="G$1" pin="DE" pad="11"/>
+<connect gate="G$1" pin="INVDE" pad="4"/>
+<connect gate="G$1" pin="RO" pad="13"/>
+<connect gate="G$1" pin="RS232RX" pad="5"/>
+<connect gate="G$1" pin="RS232TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIC(14)">
+<connects>
+<connect gate="G$1" pin="!JRXLED" pad="9"/>
+<connect gate="G$1" pin="!JTXLED" pad="10"/>
+<connect gate="G$1" pin="!RE" pad="12"/>
+<connect gate="G$1" pin="!RSRXLED" pad="7"/>
+<connect gate="G$1" pin="!RSTXLED" pad="8"/>
+<connect gate="G$1" pin="DE" pad="11"/>
+<connect gate="G$1" pin="INVDE" pad="4"/>
+<connect gate="G$1" pin="RO" pad="13"/>
+<connect gate="G$1" pin="RS232RX" pad="5"/>
+<connect gate="G$1" pin="RS232TX" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="14"/>
+<connect gate="G$1" pin="XT1" pad="2"/>
+<connect gate="G$1" pin="XT2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM329?(V2.1)" prefix="U">
+<description>&lt;b&gt;ELM329 v2.1 - CAN Interpreter&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;With vehicles beginning to only support the CAN protocols, we took an ELM327 and removed support for the non-CAN protocols (but still provide enough command support to allow most ELM327 software to work with it). With the extra space, we added functions like CAN single-wire transceiver controls, a ‘protocol active’ led output, etc. Firmware version 2.1 is the most recent revision. This IC requires a Vdd supply of 4.2V to 5.5V.&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM329-V2.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="!PWRCTRL" pad="14"/>
+<connect gate="G$1" pin="ACTIVE_LED" pad="3"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_MONITOR" pad="11"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="CONTROL" pad="4"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="IN1" pad="12"/>
+<connect gate="G$1" pin="IN2" pad="13"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="M0" pad="22"/>
+<connect gate="G$1" pin="M1" pad="21"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="!PWRCTRL" pad="14"/>
+<connect gate="G$1" pin="ACTIVE_LED" pad="3"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_MONITOR" pad="11"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="CONTROL" pad="4"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="IN1" pad="12"/>
+<connect gate="G$1" pin="IN2" pad="13"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="M0" pad="22"/>
+<connect gate="G$1" pin="M1" pad="21"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM329L?(V2.1)" prefix="U">
+<description>&lt;b&gt;ELM329L v2.1 - low voltage version of the ELM329&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;This integrated circuit supports all of the ELM329 v2.1 functions, but operates with lower voltage supplies (from 2.0V to 5.5V).&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM329L-V2.1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="!PWRCTRL" pad="14"/>
+<connect gate="G$1" pin="ACTIVE_LED" pad="3"/>
+<connect gate="G$1" pin="CAN_MONITOR" pad="11"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="CONTROL" pad="4"/>
+<connect gate="G$1" pin="FILTER_CAP" pad="6"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="IN1" pad="12"/>
+<connect gate="G$1" pin="IN2" pad="13"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="M0" pad="22"/>
+<connect gate="G$1" pin="M1" pad="21"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELM328?(V1.4)" prefix="U">
+<description>&lt;b&gt;ELM328 v1.4 - OBD Device Identifier Test IC&lt;/b&gt;
+&lt;br&gt;
+based on Microchip Technology Inc.'s PIC18F2480 (www.microchip.com)
+&lt;p&gt;The ELM327 provides a function for writing a unique identifier (ie serial number) to memory. Once set, it can not be changed, however, which poses a problem when developing software for this function. The ELM328 allows the identifier to be erased and the internal code to be reset repeatedly, so that software can be developed for this function (without having to use a new chip every time you run the code).&lt;/p&gt;
+&lt;p&gt;More info on &lt;a href="www.elmelectronics.com"&gt;Elm Electronics Inc.&lt;/a&gt;.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ELM328-V1.4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="P" package="SPDIP(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SM" package="SOIC(28)">
+<connects>
+<connect gate="G$1" pin="!MCLR" pad="1"/>
+<connect gate="G$1" pin="BAUD_RATE" pad="6"/>
+<connect gate="G$1" pin="CAN_RX" pad="24"/>
+<connect gate="G$1" pin="CAN_TX" pad="23"/>
+<connect gate="G$1" pin="IGNMON/!RTS" pad="15"/>
+<connect gate="G$1" pin="ISO_IN" pad="12"/>
+<connect gate="G$1" pin="ISO_K" pad="21"/>
+<connect gate="G$1" pin="ISO_L" pad="22"/>
+<connect gate="G$1" pin="J1850_BUS+" pad="4"/>
+<connect gate="G$1" pin="J1850_BUS-" pad="14"/>
+<connect gate="G$1" pin="J1850_VOLTS" pad="3"/>
+<connect gate="G$1" pin="LFMODE" pad="7"/>
+<connect gate="G$1" pin="MEMORY" pad="5"/>
+<connect gate="G$1" pin="OBD_RX_LED" pad="27"/>
+<connect gate="G$1" pin="OBD_TX_LED" pad="28"/>
+<connect gate="G$1" pin="PWM_IN" pad="13"/>
+<connect gate="G$1" pin="PWRCTRL/BUSY" pad="16"/>
+<connect gate="G$1" pin="RS232_RX" pad="18"/>
+<connect gate="G$1" pin="RS232_RX_LED" pad="25"/>
+<connect gate="G$1" pin="RS232_TX" pad="17"/>
+<connect gate="G$1" pin="RS232_TX_LED" pad="26"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+<connect gate="G$1" pin="VMEASURE" pad="2"/>
+<connect gate="G$1" pin="VPW_IN" pad="11"/>
+<connect gate="G$1" pin="VSS@1" pad="8"/>
+<connect gate="G$1" pin="VSS@2" pad="19"/>
+<connect gate="G$1" pin="XT1" pad="9"/>
+<connect gate="G$1" pin="XT2" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
